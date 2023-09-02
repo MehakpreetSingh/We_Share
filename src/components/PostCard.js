@@ -11,7 +11,7 @@ const PostCard = (props) => {
   useEffect(() => {
     setliked(false);
     const getuserDatabyId = async () => {
-      const url = `http://localhost:${port}/auth/getuserbyId/${props.postinfo.user.toString()}`;
+      const url = `https://weshare-backend-voui.onrender.com/auth/getuserbyId/${props.postinfo.user.toString()}`;
       const response = await fetch(url, {
         method: "GET",
         headers: {

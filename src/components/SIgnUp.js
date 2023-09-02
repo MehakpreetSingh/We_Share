@@ -14,7 +14,7 @@ const SignUp = () => {
     }
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch(`http://localhost:${port}/auth/signup`, {
+        const response = await fetch(`https://weshare-backend-voui.onrender.com/auth/signup`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

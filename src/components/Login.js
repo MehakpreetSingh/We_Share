@@ -13,7 +13,7 @@ const Login = () => {
     }
     const handleSubmit = async(e) => {
         e.preventDefault() ;
-        const response = await fetch(`http://localhost:${port}/auth/login`, {
+        const response = await fetch(`https://weshare-backend-voui.onrender.com/auth/login`, {
             method: 'POST', 
             headers: {
               'Content-Type': 'application/json' ,

@@ -16,7 +16,7 @@ const PhonePostcard = () => {
     const params = useParams();
     useEffect(() => {
         const getPost = async () => {
-            const url = `http://localhost:${port}/posts/${params.id}`
+            const url = `https://weshare-backend-voui.onrender.com/posts/${params.id}`
             const response = await fetch(url, {
                 method: "GET",
                 headers: {
